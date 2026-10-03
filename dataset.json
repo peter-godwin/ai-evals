@@ -1,0 +1,36 @@
+[
+  {
+    "vars": {
+      "user_query": "Can you help me cancel my account subscription right now?"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "cancel"
+      }
+    ]
+  },
+  {
+    "vars": {
+      "user_query": "I bought a shirt 45 days ago. Can I return it for a refund?"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "policy"
+      }
+    ]
+  },
+  {
+    "vars": {
+      "user_query": "Can I talk to your supervisor immediately?"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "supervisor"
+      }
+    ]
+  }
+]
+

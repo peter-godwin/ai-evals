@@ -1,0 +1,21 @@
+description: "Production Tier Customer Support Evaluation"
+
+prompts:
+  - "You are a helpful customer support agent. Answer this user question: {{user_query}}"
+  - "You are a concise customer support agent. Answer the user question accurately in 2 sentences or less. Question: {{user_query}}"
+  - "You are an expert customer support agent. If a request cannot be fulfilled due to company policy, explicitly state that we cannot process it, keep your response under 3 sentences, and remain highly professional. Question: {{user_query}}"
+
+providers:
+  - id: "openrouter:google/gemini-2.5-flash"
+    config:
+      temperature: 0.1
+
+
+tests: file://dataset.json
+
+
+defaultTest:
+  assert:
+    - type: javascript
+      value: "output.length < 400"
+
