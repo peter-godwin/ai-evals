@@ -66,3 +66,6 @@ npx promptfoo@latest export -o summary.csv
 
 * **Variant 1 (Helpful Prompt)** tends to fail strict production suites because it remains too conversational, leading to verbose responses that breach standard length caps.
 * **Variant 2 (Concise Prompt) & Variant 3 (Expert Prompt)** are optimal, consistently maintaining compliance with length bounds (<400 characters) and ensuring accurate company policy phrasing.
+
+<img width="1353" height="651" alt="Screenshot from 2026-10-03 20-26-44" src="https://github.com/user-attachments/assets/ec9e4183-d278-44c3-961a-f1736295068a" />
+
